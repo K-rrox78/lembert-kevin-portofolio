@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Kevin Lembert - Portfolio Cybersécurité</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/3010d94d2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="portfolio-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="../index.html">Kevin Lembert</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#illustrations">Expertise</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#education">Formation</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="portfolio-hero" id="about">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Kevin Lembert</h1>
+                        <h2>Ingénieur Systèmes & Cybersécurité</h2>
+                        <p>Ingénieur cybersécurité (5 ans d'expérience) spécialisé dans la sécurité opérationnelle et les environnements industriels (OT/ICS). J'interviens sur la gestion des risques, les tests d'intrusion et l'automatisation (Python/Bash) pour produire des livrables exploitables.</p>
+
+                        <div style="margin-bottom: 20px;">
+                            <a href="../assets/Dossier_de_competences_Lembert_Kevin.pdf" class="btn-secondary" download="Dossier_Competences_Kevin_Lembert.pdf">
+                                <i class="fas fa-file-pdf"></i> Télécharger mon Dossier Technique
+                            </a>
+                        </div>
+
+                        <div class="social-profiles">
+                            <a href="https://github.com/Karrox78" class="social-profile github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kevin-lembert-cybersec/" class="social-profile linkedin" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-container">
+                            <img src="../images/kevin-profile.jpg" alt="Kevin Lembert" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Illustrations Section -->
+        <section class="illustrations-section" id="illustrations">
+            <div class="container">
+                <h2>Expertise</h2>
+                <p class="section-intro">Mes domaines de spécialité en cybersécurité et administration systèmes</p>
+                
+                <div class="illustrations-grid">
+                    <div class="illustration-card">
+                        <div class="illustration" id="cyber-shield"></div>
+                        <h3>Sécurité Proactive</h3>
+                        <p>Protection avancée des infrastructures critiques contre les menaces persistantes.</p>
+                    </div>
+                    
+                    <div class="illustration-card">
+                        <div class="illustration" id="cyber-network"></div>
+                        <h3>Sécurité Réseau</h3>
+                        <p>Détection et prévention des intrusions dans les réseaux complexes.</p>
+                    </div>
+                    
+                    <div class="illustration-card">
+                        <div class="illustration" id="sys-server"></div>
+                        <h3>Administration Systèmes</h3>
+                        <p>Déploiement et maintenance d'infrastructures serveur sécurisées.</p>
+                    </div>
+                    
+                    <div class="illustration-card">
+                        <div class="illustration" id="sys-cloud"></div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Orchestration d'environnements cloud avec sécurité intégrée.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="portfolio-projects" id="projects">
+            <div class="container">
+                <h2>Mes Projets</h2>
+                <p class="section-intro">Une sélection de mes projets en cybersécurité et automatisation d'infrastructure</p>
+                
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="project-icon"><i class="fab fa-docker"></i></div>
+                        <h3>DockerInstaller</h3>
+                        <p>Script d'installation automatisée de Docker Engine pour les systèmes Debian. Configure les dépendances, clés GPG, et accès non-root.</p>
+                        <div class="project-tags">
+                            <span class="tag">Shell</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <a href="https://github.com/K-rrox78/DockerInstaller" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="project-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>OpenStack</h3>
+                        <p>Script Bash pour l'installation automatisée d'OpenStack et Authelia avec Nginx. Déploiement complet d'infrastructure cloud privée.</p>
+                        <div class="project-tags">
+                            <span class="tag">Shell</span>
+                            <span class="tag">OpenStack</span>
+                            <span class="tag">Cloud</span>
+                        </div>
+                        <a href="https://github.com/K-rrox78/OpenStack" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Heimdall</h3>
+                        <p>Outil de sécurité développé en Python pour la surveillance et la protection des systèmes informatiques.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Monitoring</span>
+                        </div>
+                        <a href="https://github.com/K-rrox78/Heimdall" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Zimbra-Grafana-Prometheus</h3>
+                        <p>Documentation d'installation et configuration de Zimbra avec monitoring via Grafana et Prometheus sur Debian. Projet de fin d'études BTS.</p>
+                        <div class="project-tags">
+                            <span class="tag">Monitoring</span>
+                            <span class="tag">Documentation</span>
+                            <span class="tag">Debian</span>
+                        </div>
+                        <a href="https://github.com/K-rrox78/Documentation-d-installation-de-Zimbra-Grafana-et-Prometheus-sur-Debian" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <h2>Expérience Professionnelle</h2>
+                <p class="section-intro">Mon parcours professionnel en cybersécurité</p>
+                
+                <div class="timeline">
+                    <!-- SNCF - Analyste en Sécurité des Systèmes Informatiques Industriels -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Janvier 2025 - Présent (8 mois)</div>
+                            <h3>Analyste en Sécurité des Systèmes Informatiques Industriels</h3>
+                            <h4>Groupe SNCF - Île-de-France, France</h4>
+                            <ul class="timeline-details">
+                                <li><strong>Tests d'Intrusion :</strong> Conduite de tests d'intrusion réguliers pour identifier et exploiter les faiblesses potentielles. Fourniture de recommandations détaillées pour remédier aux vulnérabilités.</li>
+                                <li><strong>Scan de Vulnérabilités :</strong> Détection des vulnérabilités existantes sur tout le réseau et les applications OT. Évaluation continue des menaces nouvelles et émergentes.</li>
+                                <li><strong>Rapports de Sécurité :</strong> Élaboration de rapports sur l'état de sécurité, incluant les failles trouvées et les actions correctives proposées.</li>
+                                <li><strong>Automatisation :</strong> Création de scripts en Python & Bash pour optimiser les traitements des procédures, notamment l'automatisation des relectures de rapports et la vérification des vulnérabilités.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ingénieur en cybersécurité -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Janvier 2024 - Janvier 2025 (1 an 1 mois)</div>
+                            <h3>Ingénieur en cybersécurité</h3>
+                            <h4>Seine-Saint-Denis, Île-de-France, France</h4>
+                            <ul class="timeline-details">
+                                <li>Participation au plan d'action JOP 2024 visant à préparer la stratégie de défense du groupe SNCF pour les Jeux Olympiques & Paralympiques 2024 de Paris.</li>
+                                <li>Participation à la gestion des risques cybersécurité (plan d'action, priorisation, suivi).</li>
+                                <li>Appui à la stratégie SOC et gouvernance SSI : définition des priorités de surveillance.</li>
+                                <li>Veille continue sur les menaces émergentes et TTPs via outils internes et sources externes.</li>
+                                <li>Gestion de Projets liés à la sécurité du groupe SNCF.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Responsable de la Cellule de veille Cybersécurité -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Septembre 2022 - Septembre 2024 (2 ans 1 mois)</div>
+                            <h3>Responsable de la Cellule de veille Cybersécurité</h3>
+                            <h4>Seine-Saint-Denis, Île-de-France, France</h4>
+                            <ul class="timeline-details">
+                                <li><strong>Mission Veille Cybersécurité :</strong> Refonte du SharePoint de communication de la cellule de veille cybersécurité.</li>
+                                <li>Gouvernance des Security Day SNCF (Instance mensuelle réunissant plusieurs fournisseurs du marché de la Cybersécurité).</li>
+                                <li>Mise en place d'outils de suivi des fournisseurs et des licences des équipements SI via Power BI et Power Automate.</li>
+                                <li><strong>Projet Cyber Lake :</strong> Mise en place d'un data Lake visant à unifier les sources de données de sécurité du groupe (Endpoint, services applicatifs, PAM, AD, etc.).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- SNCF Réseau - Chargé de production -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Novembre 2020 - Août 2022 (1 an 10 mois)</div>
+                            <h3>Chargé de production</h3>
+                            <h4>SNCF Réseau - Ville de Paris, Île-de-France, France</h4>
+                            <ul class="timeline-details">
+                                <li>Appui à la maîtrise d'ouvrage SI dans un projet de transformation digitale : décommissionnement d'une chaîne de diffusion et migration des applications clients.</li>
+                                <li>Identification des données entre chaînes pour assurer la continuité du SI lors des migrations.</li>
+                                <li>Mise en place d'outils de suivi (SharePoint) et d'indicateurs de migration.</li>
+                                <li>Réalisation d'un mapping des données et rédaction de cahiers de recettes pour les outils de visualisation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section" id="education">
+            <div class="container">
+                <h2>Formation</h2>
+                <p class="section-intro">Mon parcours académique</p>
+                
+                <div class="education-container">
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>ENSITECH</h3>
+                            <h4>Master 2 (M2), Sécurité / sûreté de l'information des systèmes informatiques</h4>
+                            <div class="education-date">Septembre 2024 - Août 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>ENSITECH</h3>
+                            <h4>Master 1 (M1), Sécurité / sûreté de l'information des systèmes informatiques</h4>
+                            <div class="education-date">Septembre 2023 - Août 2024</div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>ENSITECH</h3>
+                            <h4>Bachelor CyberSécurité & Cloud Computing, Technologies de l'information</h4>
+                            <div class="education-date">Septembre 2022 - Août 2023</div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>CFA ISCIO</h3>
+                            <h4>BTS services informatiques aux organisations, Mise en réseau de systèmes informatiques et télécommunications</h4>
+                            <div class="education-date">Septembre 2020 - Juin 2022</div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="education-content">
+                            <h3>Lycée Émilie De Breteuil</h3>
+                            <h4>Baccalauréat, Sciences et Technologies de l'industrie et du développement durable</h4>
+                            <div class="education-date">2017 - 2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section" style="padding: 2rem 0; background: var(--dark-surface);">
+            <div class="container">
+                <h2>Certifications</h2>
+                <div class="skills-list" style="justify-content: center; margin-top: 1rem;">
+                    <div class="skill-item" style="background: rgba(46, 204, 113, 0.15); border-color: var(--accent-color);">
+                        <i class="fas fa-certificate"></i> MOOC SecNumacadémie (ANSSI)
+                    </div>
+                    <div class="skill-item" style="background: rgba(46, 204, 113, 0.15); border-color: var(--accent-color);">
+                        <i class="fas fa-shield-alt"></i> Introduction to Cybersecurity (Cisco)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <h2>Compétences</h2>
+                <p class="section-intro">Technologies et méthodologies que j'utilise au quotidien</p>
+                
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Gouvernance & Risques</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">Analyse de risques (EBIOS RM)</div>
+                            <div class="skill-item">Guides ANSSI</div>
+                            <div class="skill-item">Matrice MITRE ATT&CK</div>
+                            <div class="skill-item">Audit & Conformité SSI</div>
+                            <div class="skill-item">Sensibilisation (Phishing)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Sécurité Offensive & Vulnérabilités</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">Pentest OT/ICS</div>
+                            <div class="skill-item">Nessus / OpenVAS</div>
+                            <div class="skill-item">Burp Suite</div>
+                            <div class="skill-item">Metasploit</div>
+                            <div class="skill-item">Cyberwatch</div>
+                            <div class="skill-item">Besecure</div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Protection & Réseaux</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">Stormshield</div>
+                            <div class="skill-item">OPNsense / pfSense</div>
+                            <div class="skill-item">EDR / Windows Defender</div>
+                            <div class="skill-item">Active Directory</div>
+                            <div class="skill-item">Linux / Windows / macOS</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Cloud & Virtualisation</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">AWS / Azure</div>
+                            <div class="skill-item">VMware vSphere / Proxmox</div>
+                            <div class="skill-item">Docker / Kubernetes (K3s)</div>
+                            <div class="skill-item">Ansible (IaC)</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Observabilité & Ops</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">ELK Stack</div>
+                            <div class="skill-item">Grafana / Prometheus</div>
+                            <div class="skill-item">Zabbix</div>
+                            <div class="skill-item">Centreon</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Langages & Data</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">Python (Automatisation)</div>
+                            <div class="skill-item">Bash / PowerShell</div>
+                            <div class="skill-item">Power BI</div>
+                            <div class="skill-item">Power Automate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p class="section-intro">Intéressé par mon travail? N'hésitez pas à me contacter</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>kevinlembert-pro@pm.me</p>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/kevin-lembert-cybersec/" target="_blank">kevin-lembert-cybersec</a></p>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/K-rrox78" target="_blank">K-rrox78</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kevin Lembert. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="../mentions-legales.html">Mentions Légales</a>
+                <a href="../politique-de-confidentialite.html">Politique de Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+    <script src="cyber-illustrations.js"></script>
+</body>
+</html>
