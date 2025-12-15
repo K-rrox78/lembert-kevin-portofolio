@@ -67,6 +67,18 @@ a:hover {
     color: var(--primary-color);
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -249,22 +261,18 @@ a:hover {
 .social-profile {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
-    border-radius: 50px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
 }
 
 .social-profile i {
     font-size: 24px;
-    margin-right: 10px;
-}
-
-.social-profile span {
-    font-size: 16px;
-    font-weight: 500;
 }
 
 .social-profile.github {
