@@ -130,6 +130,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: var(--space-lg);
+    width: 100%;
 }
 
 .logo a {
@@ -143,10 +144,12 @@ a:hover {
     display: flex;
     list-style: none;
     gap: var(--space-lg);
+    flex: 1;
+    justify-content: center;
 }
 
 .language-switcher {
-    margin-left: var(--space-md);
+    margin-left: auto;
 }
 
 .language-toggle {
