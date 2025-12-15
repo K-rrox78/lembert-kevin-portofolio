@@ -17,14 +17,17 @@
                     <a href="../index.html">Kevin Lembert</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#illustrations">Compétences clés</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#experience">Expérience</a></li>
-                    <li><a href="#education">Formation</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+                    <li><a href="#illustrations" data-i18n="nav.illustrations">Compétences clés</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
+                    <li><a href="#education" data-i18n="nav.education">Formation</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
+                <div class="language-switcher">
+                    <button id="language-toggle" class="language-toggle" type="button" aria-label="Passer en anglais">EN</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -35,17 +38,17 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>Kevin Lembert</h1>
-                        <h2>Ingénieur Systèmes & Cybersécurité</h2>
-                        <p>Passionné par la sécurité informatique et le développement DevOps. Je crée des solutions robustes pour sécuriser les infrastructures et automatiser les déploiements.</p>
+                        <h1 data-i18n="hero.name">Kevin Lembert</h1>
+                        <h2 data-i18n="hero.title">Ingénieur Systèmes & Cybersécurité</h2>
+                        <p data-i18n="hero.description">Passionné par la sécurité informatique et le développement DevOps. Je crée des solutions robustes pour sécuriser les infrastructures et automatiser les déploiements.</p>
                         <div class="social-profiles">
                             <a href="https://github.com/K-rrox78" class="social-profile github" target="_blank">
                                 <i class="fab fa-github"></i>
-                                <span>GitHub</span>
+                                <span data-i18n="hero.github">GitHub</span>
                             </a>
                             <a href="https://www.linkedin.com/in/kevin-lembert-cybersec/" class="social-profile linkedin" target="_blank">
                                 <i class="fab fa-linkedin-in"></i>
-                                <span>LinkedIn</span>
+                                <span data-i18n="hero.linkedin">LinkedIn</span>
                             </a>
                         </div>
                     </div>
@@ -59,40 +62,40 @@
         <!-- Illustrations Section (Compétences clés) -->
         <section class="illustrations-section" id="illustrations">
             <div class="container">
-                <h2>Compétences clés</h2>
-                <p class="section-intro">
+                <h2 data-i18n="illustrations.heading">Compétences clés</h2>
+                <p class="section-intro" data-i18n="illustrations.intro">
                     Synthèse de mes principaux domaines d'intervention en cybersécurité opérationnelle, environnements industriels (OT/ICS) et automatisation orientée métier.
                 </p>
                 
                 <div class="illustrations-grid">
                     <div class="illustration-card">
                         <div class="illustration" id="cyber-shield"></div>
-                        <h3>Cybersécurité industrielle (OT/ICS)</h3>
-                        <p>
+                        <h3 data-i18n="illustrations.industrial.title">Cybersécurité industrielle (OT/ICS)</h3>
+                        <p data-i18n="illustrations.industrial.text">
                             Tests d'intrusion contrôlés, scans de vulnérabilités OT et priorisation des remédiations pour sécuriser les systèmes industriels critiques et limiter les impacts métier.
                         </p>
                     </div>
                     
                     <div class="illustration-card">
                         <div class="illustration" id="cyber-network"></div>
-                        <h3>Gestion des risques & gouvernance SSI</h3>
-                        <p>
+                        <h3 data-i18n="illustrations.risk.title">Gestion des risques &amp; gouvernance SSI</h3>
+                        <p data-i18n="illustrations.risk.text">
                             Analyse des risques basée sur les guides ANSSI, matrices de flux et MITRE ATT&CK, contribution aux plans d'action cybersécurité et animation de comités avec les métiers et RSSI.
                         </p>
                     </div>
                     
                     <div class="illustration-card">
                         <div class="illustration" id="sys-server"></div>
-                        <h3>Supervision des vulnérabilités & SOC</h3>
-                        <p>
+                        <h3 data-i18n="illustrations.vuln.title">Supervision des vulnérabilités &amp; SOC</h3>
+                        <p data-i18n="illustrations.vuln.text">
                             Suivi des vulnérabilités avec Nmap, Nessus, OpenVAS, Cyberwatch &amp; BeSecure, appui aux équipes SOC pour prioriser la surveillance et transformer les alertes en décisions opérationnelles.
                         </p>
                     </div>
                     
                     <div class="illustration-card">
                         <div class="illustration" id="sys-cloud"></div>
-                        <h3>Automatisation & data pour la cybersécurité</h3>
-                        <p>
+                        <h3 data-i18n="illustrations.automation.title">Automatisation &amp; data pour la cybersécurité</h3>
+                        <p data-i18n="illustrations.automation.text">
                             Automatisation de taches via Python, Bash et PowerShell, génération de rapports Excel et tableaux de bord Power BI, industrialisation des flux avec n8n, Power Automate et SharePoint.
                         </p>
                     </div>
@@ -103,56 +106,56 @@
         <!-- Projects Section -->
         <section class="portfolio-projects" id="projects">
             <div class="container">
-                <h2>Mes Projets</h2>
-                <p class="section-intro">Une sélection de mes projets en cybersécurité et automatisation d'infrastructure</p>
+                <h2 data-i18n="projects.heading">Mes Projets</h2>
+                <p class="section-intro" data-i18n="projects.intro">Une sélection de mes projets en cybersécurité et automatisation d'infrastructure</p>
                 
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
                         <div class="project-icon"><i class="fab fa-docker"></i></div>
-                        <h3>DockerInstaller</h3>
-                        <p>Script d'installation automatisée de Docker Engine pour les systèmes Debian. Configure les dépendances, clés GPG, et accès non-root.</p>
+                        <h3 data-i18n="projects.docker.title">DockerInstaller</h3>
+                        <p data-i18n="projects.docker.text">Script d'installation automatisée de Docker Engine pour les systèmes Debian. Configure les dépendances, clés GPG, et accès non-root.</p>
                         <div class="project-tags">
                             <span class="tag">Shell</span>
                             <span class="tag">Docker</span>
                             <span class="tag">Automation</span>
                         </div>
-                        <a href="https://github.com/K-rrox78/DockerInstaller" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/K-rrox78/DockerInstaller" class="project-link" target="_blank" data-i18n="projects.cta" data-i18n-type="html">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="portfolio-item">
                         <div class="project-icon"><i class="fas fa-cloud"></i></div>
-                        <h3>OpenStack</h3>
-                        <p>Script Bash pour l'installation automatisée d'OpenStack et Authelia avec Nginx. Déploiement complet d'infrastructure cloud privée.</p>
+                        <h3 data-i18n="projects.openstack.title">OpenStack</h3>
+                        <p data-i18n="projects.openstack.text">Script Bash pour l'installation automatisée d'OpenStack et Authelia avec Nginx. Déploiement complet d'infrastructure cloud privée.</p>
                         <div class="project-tags">
                             <span class="tag">Shell</span>
                             <span class="tag">OpenStack</span>
                             <span class="tag">Cloud</span>
                         </div>
-                        <a href="https://github.com/K-rrox78/OpenStack" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/K-rrox78/OpenStack" class="project-link" target="_blank" data-i18n="projects.cta" data-i18n-type="html">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="portfolio-item">
                         <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3>Heimdall</h3>
-                        <p>Outil de sécurité développé en Python pour la surveillance et la protection des systèmes informatiques.</p>
+                        <h3 data-i18n="projects.heimdall.title">Heimdall</h3>
+                        <p data-i18n="projects.heimdall.text">Outil de sécurité développé en Python pour la surveillance et la protection des systèmes informatiques.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">Security</span>
                             <span class="tag">Monitoring</span>
                         </div>
-                        <a href="https://github.com/K-rrox78/Heimdall" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/K-rrox78/Heimdall" class="project-link" target="_blank" data-i18n="projects.cta" data-i18n-type="html">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="portfolio-item">
                         <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Zimbra-Grafana-Prometheus</h3>
-                        <p>Documentation d'installation et configuration de Zimbra avec monitoring via Grafana et Prometheus sur Debian. Projet de fin d'études BTS.</p>
+                        <h3 data-i18n="projects.zimbra.title">Zimbra-Grafana-Prometheus</h3>
+                        <p data-i18n="projects.zimbra.text">Documentation d'installation et configuration de Zimbra avec monitoring via Grafana et Prometheus sur Debian. Projet de fin d'études BTS.</p>
                         <div class="project-tags">
                             <span class="tag">Monitoring</span>
                             <span class="tag">Documentation</span>
                             <span class="tag">Debian</span>
                         </div>
-                        <a href="https://github.com/K-rrox78/Documentation-d-installation-de-Zimbra-Grafana-et-Prometheus-sur-Debian" class="project-link" target="_blank">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/K-rrox78/Documentation-d-installation-de-Zimbra-Grafana-et-Prometheus-sur-Debian" class="project-link" target="_blank" data-i18n="projects.cta" data-i18n-type="html">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -161,22 +164,22 @@
         <!-- Experience Section -->
         <section class="experience-section" id="experience">
             <div class="container">
-                <h2>Expérience Professionnelle</h2>
-                <p class="section-intro">Mon parcours professionnel en cybersécurité</p>
+                <h2 data-i18n="experience.heading">Expérience Professionnelle</h2>
+                <p class="section-intro" data-i18n="experience.intro">Mon parcours professionnel en cybersécurité</p>
                 
                 <div class="timeline">
                     <!-- SNCF - Analyste en Sécurité des Systèmes Informatiques Industriels -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">Janvier 2025 - Présent (8 mois)</div>
-                            <h3>Analyste en Sécurité des Systèmes Informatiques Industriels</h3>
-                            <h4>Groupe SNCF - Île-de-France, France</h4>
+                            <div class="timeline-date" data-i18n="experience.current.date">Janvier 2025 - Présent (8 mois)</div>
+                            <h3 data-i18n="experience.current.title">Analyste en Sécurité des Systèmes Informatiques Industriels</h3>
+                            <h4 data-i18n="experience.current.company">Groupe SNCF - Île-de-France, France</h4>
                             <ul class="timeline-details">
-                                <li><strong>Tests d'Intrusion :</strong> Conduite de tests d'intrusion réguliers pour identifier et exploiter les faiblesses potentielles. Fourniture de recommandations détaillées pour remédier aux vulnérabilités.</li>
-                                <li><strong>Scan de Vulnérabilités :</strong> Détection des vulnérabilités existantes sur tout le réseau et les applications OT. Évaluation continue des menaces nouvelles et émergentes.</li>
-                                <li><strong>Rapports de Sécurité :</strong> Élaboration de rapports sur l'état de sécurité, incluant les failles trouvées et les actions correctives proposées.</li>
-                                <li><strong>Automatisation :</strong> Création de scripts en Python & Bash pour optimiser les traitements des procédures, notamment l'automatisation des relectures de rapports et la vérification des vulnérabilités.</li>
+                                <li data-i18n="experience.current.penetration" data-i18n-type="html"><strong>Tests d'Intrusion :</strong> Conduite de tests d'intrusion réguliers pour identifier et exploiter les faiblesses potentielles. Fourniture de recommandations détaillées pour remédier aux vulnérabilités.</li>
+                                <li data-i18n="experience.current.vuln" data-i18n-type="html"><strong>Scan de Vulnérabilités :</strong> Détection des vulnérabilités existantes sur tout le réseau et les applications OT. Évaluation continue des menaces nouvelles et émergentes.</li>
+                                <li data-i18n="experience.current.reports" data-i18n-type="html"><strong>Rapports de Sécurité :</strong> Élaboration de rapports sur l'état de sécurité, incluant les failles trouvées et les actions correctives proposées.</li>
+                                <li data-i18n="experience.current.automation" data-i18n-type="html"><strong>Automatisation :</strong> Création de scripts en Python &amp; Bash pour optimiser les traitements des procédures, notamment l'automatisation des relectures de rapports et la vérification des vulnérabilités.</li>
                             </ul>
                         </div>
                     </div>
@@ -185,15 +188,15 @@
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">Janvier 2024 - Janvier 2025 (1 an 1 mois)</div>
-                            <h3>Ingénieur en cybersécurité</h3>
-                            <h4>Groupe SNCF - Île-de-France, France</h4>
+                            <div class="timeline-date" data-i18n="experience.engineer.date">Janvier 2024 - Janvier 2025 (1 an 1 mois)</div>
+                            <h3 data-i18n="experience.engineer.title">Ingénieur en cybersécurité</h3>
+                            <h4 data-i18n="experience.engineer.company">Groupe SNCF - Île-de-France, France</h4>
                             <ul class="timeline-details">
-                                <li>Participation au plan d'action JOP 2024 visant à préparer la stratégie de défense du groupe SNCF pour les Jeux Olympiques & Paralympiques 2024 de Paris.</li>
-                                <li>Participation à la gestion des risques cybersécurité (plan d'action, priorisation, suivi).</li>
-                                <li>Appui à la stratégie SOC et gouvernance SSI : définition des priorités de surveillance.</li>
-                                <li>Veille continue sur les menaces émergentes et TTPs via outils internes et sources externes.</li>
-                                <li>Gestion de Projets liés à la sécurité du groupe SNCF.</li>
+                                <li data-i18n="experience.engineer.jop">Participation au plan d'action JOP 2024 visant à préparer la stratégie de défense du groupe SNCF pour les Jeux Olympiques &amp; Paralympiques 2024 de Paris.</li>
+                                <li data-i18n="experience.engineer.risk">Participation à la gestion des risques cybersécurité (plan d'action, priorisation, suivi).</li>
+                                <li data-i18n="experience.engineer.soc">Appui à la stratégie SOC et gouvernance SSI : définition des priorités de surveillance.</li>
+                                <li data-i18n="experience.engineer.threats">Veille continue sur les menaces émergentes et TTPs via outils internes et sources externes.</li>
+                                <li data-i18n="experience.engineer.projects">Gestion de Projets liés à la sécurité du groupe SNCF.</li>
                             </ul>
                         </div>
                     </div>
@@ -202,14 +205,14 @@
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">Septembre 2022 - Septembre 2024 (2 ans 1 mois)</div>
-                            <h3>Responsable de la Cellule de veille Cybersécurité</h3>
-                            <h4>Groupe SNCF - Île-de-France, France</h4>
+                            <div class="timeline-date" data-i18n="experience.lead.date">Septembre 2022 - Septembre 2024 (2 ans 1 mois)</div>
+                            <h3 data-i18n="experience.lead.title">Responsable de la Cellule de veille Cybersécurité</h3>
+                            <h4 data-i18n="experience.lead.company">Groupe SNCF - Île-de-France, France</h4>
                             <ul class="timeline-details">
-                                <li><strong>Mission Veille Cybersécurité :</strong> Refonte du SharePoint de communication de la cellule de veille cybersécurité.</li>
-                                <li>Gouvernance des Security Day SNCF (Instance mensuelle réunissant plusieurs fournisseurs du marché de la Cybersécurité).</li>
-                                <li>Mise en place d'outils de suivi des fournisseurs et des licences des équipements SI via Power BI et Power Automate.</li>
-                                <li><strong>Projet Cyber Lake :</strong> Mise en place d'un data Lake visant à unifier les sources de données de sécurité du groupe (Endpoint, services applicatifs, PAM, AD, etc.).</li>
+                                <li data-i18n="experience.lead.monitoring" data-i18n-type="html"><strong>Mission Veille Cybersécurité :</strong> Refonte du SharePoint de communication de la cellule de veille cybersécurité.</li>
+                                <li data-i18n="experience.lead.securityDay">Gouvernance des Security Day SNCF (Instance mensuelle réunissant plusieurs fournisseurs du marché de la Cybersécurité).</li>
+                                <li data-i18n="experience.lead.tools">Mise en place d'outils de suivi des fournisseurs et des licences des équipements SI via Power BI et Power Automate.</li>
+                                <li data-i18n="experience.lead.cyberlake" data-i18n-type="html"><strong>Projet Cyber Lake :</strong> Mise en place d'un data Lake visant à unifier les sources de données de sécurité du groupe (Endpoint, services applicatifs, PAM, AD, etc.).</li>
                             </ul>
                         </div>
                     </div>
@@ -218,14 +221,14 @@
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">Novembre 2020 - Août 2022 (1 an 10 mois)</div>
-                            <h3>Chargé de production</h3>
-                            <h4>SNCF Réseau - Ville de Paris, Île-de-France, France</h4>
+                            <div class="timeline-date" data-i18n="experience.production.date">Novembre 2020 - Août 2022 (1 an 10 mois)</div>
+                            <h3 data-i18n="experience.production.title">Chargé de production</h3>
+                            <h4 data-i18n="experience.production.company">SNCF Réseau - Ville de Paris, Île-de-France, France</h4>
                             <ul class="timeline-details">
-                                <li>Appui à la maîtrise d'ouvrage SI dans un projet de transformation digitale : décommissionnement d'une chaîne de diffusion et migration des applications clients.</li>
-                                <li>Identification des données entre chaînes pour assurer la continuité du SI lors des migrations.</li>
-                                <li>Mise en place d'outils de suivi (SharePoint) et d'indicateurs de migration.</li>
-                                <li>Réalisation d'un mapping des données et rédaction de cahiers de recettes pour les outils de visualisation.</li>
+                                <li data-i18n="experience.production.digital">Appui à la maîtrise d'ouvrage SI dans un projet de transformation digitale : décommissionnement d'une chaîne de diffusion et migration des applications clients.</li>
+                                <li data-i18n="experience.production.data">Identification des données entre chaînes pour assurer la continuité du SI lors des migrations.</li>
+                                <li data-i18n="experience.production.tracking">Mise en place d'outils de suivi (SharePoint) et d'indicateurs de migration.</li>
+                                <li data-i18n="experience.production.mapping">Réalisation d'un mapping des données et rédaction de cahiers de recettes pour les outils de visualisation.</li>
                             </ul>
                         </div>
                     </div>
@@ -236,52 +239,52 @@
         <!-- Education Section -->
         <section class="education-section" id="education">
             <div class="container">
-                <h2>Formation</h2>
-                <p class="section-intro">Mon parcours académique</p>
+                <h2 data-i18n="education.heading">Formation</h2>
+                <p class="section-intro" data-i18n="education.intro">Mon parcours académique</p>
                 
                 <div class="education-container">
                     <div class="education-item">
                         <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div class="education-content">
-                            <h3>ENSITECH</h3>
-                            <h4>Master 2 (M2), Sécurité / sûreté de l'information des systèmes informatiques</h4>
-                            <div class="education-date">Septembre 2024 - Août 2025</div>
+                            <h3 data-i18n="education.m2.school">ENSITECH</h3>
+                            <h4 data-i18n="education.m2.title">Master 2 (M2), Sécurité / sûreté de l'information des systèmes informatiques</h4>
+                            <div class="education-date" data-i18n="education.m2.date">Septembre 2024 - Août 2025</div>
                         </div>
                     </div>
 
                     <div class="education-item">
                         <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div class="education-content">
-                            <h3>ENSITECH</h3>
-                            <h4>Master 1 (M1), Sécurité / sûreté de l'information des systèmes informatiques</h4>
-                            <div class="education-date">Septembre 2023 - Août 2024</div>
+                            <h3 data-i18n="education.m1.school">ENSITECH</h3>
+                            <h4 data-i18n="education.m1.title">Master 1 (M1), Sécurité / sûreté de l'information des systèmes informatiques</h4>
+                            <div class="education-date" data-i18n="education.m1.date">Septembre 2023 - Août 2024</div>
                         </div>
                     </div>
 
                     <div class="education-item">
                         <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div class="education-content">
-                            <h3>ENSITECH</h3>
-                            <h4>Bachelor CyberSécurité & Cloud Computing, Technologies de l'information</h4>
-                            <div class="education-date">Septembre 2022 - Août 2023</div>
+                            <h3 data-i18n="education.bachelor.school">ENSITECH</h3>
+                            <h4 data-i18n="education.bachelor.title">Bachelor CyberSécurité &amp; Cloud Computing, Technologies de l'information</h4>
+                            <div class="education-date" data-i18n="education.bachelor.date">Septembre 2022 - Août 2023</div>
                         </div>
                     </div>
 
                     <div class="education-item">
                         <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div class="education-content">
-                            <h3>CFA ISCIO</h3>
-                            <h4>BTS services informatiques aux organisations, Mise en réseau de systèmes informatiques et télécommunications</h4>
-                            <div class="education-date">Septembre 2020 - Juin 2022</div>
+                            <h3 data-i18n="education.bts.school">CFA ISCIO</h3>
+                            <h4 data-i18n="education.bts.title">BTS services informatiques aux organisations, Mise en réseau de systèmes informatiques et télécommunications</h4>
+                            <div class="education-date" data-i18n="education.bts.date">Septembre 2020 - Juin 2022</div>
                         </div>
                     </div>
 
                     <div class="education-item">
                         <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
                         <div class="education-content">
-                            <h3>Lycée Émilie De Breteuil</h3>
-                            <h4>Baccalauréat, Sciences et Technologies de l'industrie et du développement durable</h4>
-                            <div class="education-date">2017 - 2020</div>
+                            <h3 data-i18n="education.bac.school">Lycée Émilie De Breteuil</h3>
+                            <h4 data-i18n="education.bac.title">Baccalauréat, Sciences et Technologies de l'industrie et du développement durable</h4>
+                            <div class="education-date" data-i18n="education.bac.date">2017 - 2020</div>
                         </div>
                     </div>
                 </div>
@@ -291,26 +294,26 @@
         <!-- Skills Section (Compétences) -->
         <section class="skills-section" id="skills">
             <div class="container">
-                <h2>Compétences</h2>
-                <p class="section-intro">
+                <h2 data-i18n="skills.heading">Compétences</h2>
+                <p class="section-intro" data-i18n="skills.intro">
                     Un panorama de mes compétences techniques et méthodologiques en cybersécurité, industrialisation et pilotage de la sécurité.
                 </p>
                 
                 <div class="skills-container">
                     <!-- Domaines de compétences -->
                     <div class="skills-category">
-                        <h3>Domaines de compétences</h3>
+                        <h3 data-i18n="skills.domains.title">Domaines de compétences</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.domains.risk">
                                 Gestion des risques (guides ANSSI, matrice de flux, MITRE ATT&amp;CK)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.domains.audit">
                                 Audit &amp; conformité SSI, évaluation de maturité
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.domains.awareness">
                                 Sensibilisation sécurité (phishing, mots de passe)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.domains.project">
                                 Pilotage de projets &amp; comitologie (opérationnelle / stratégique)
                             </div>
                         </div>
@@ -318,18 +321,18 @@
 
                     <!-- Cybersécurité OT / opérationnelle -->
                     <div class="skills-category">
-                        <h3>Cybersécurité OT / opérationnelle</h3>
+                        <h3 data-i18n="skills.ot.title">Cybersécurité OT / opérationnelle</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.ot.pentest">
                                 Tests d’intrusion contrôlés sur environnements OT/ICS
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.ot.vuln">
                                 Scans de vulnérabilités OT et priorisation des remédiations
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.ot.reports">
                                 Production de rapports de sécurité actionnables pour les métiers
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.ot.strategy">
                                 Contribution à la stratégie de défense (JOP 2024, appui SOC &amp; gouvernance SSI)
                             </div>
                         </div>
@@ -337,15 +340,15 @@
                     
                     <!-- Outils de sécurité & supervision -->
                     <div class="skills-category">
-                        <h3>Outils de sécurité &amp; supervision</h3>
+                        <h3 data-i18n="skills.tools.title">Outils de sécurité &amp; supervision</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.tools.scanners">
                                 Nmap, Nessus, Burp Suite, Metasploit, OpenVAS, BeSecure, Cyberwatch
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.tools.edr">
                                 EDR, SIEM, Windows Defender, Stormshield, OPNsense / pfSense, ELK
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.tools.threat">
                                 Exploitation de CISA KEV et sources ouvertes pour la veille vulnérabilités
                             </div>
                         </div>
@@ -353,18 +356,18 @@
                     
                     <!-- Systèmes, réseaux & virtualisation -->
                     <div class="skills-category">
-                        <h3>Systèmes, réseaux &amp; virtualisation</h3>
+                        <h3 data-i18n="skills.systems.title">Systèmes, réseaux &amp; virtualisation</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.systems.admin">
                                 Administration Linux, Windows, macOS
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.systems.directory">
                                 Gestion d'annuaires &amp; infrastructures : Active Directory, VMware vSphere
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.systems.virtualization">
                                 Virtualisation : VMware, Proxmox, KVM
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.systems.network">
                                 VPN &amp; sécurité réseau (OpenVPN, firewalls)
                             </div>
                         </div>
@@ -372,18 +375,18 @@
 
                     <!-- Cloud, conteneurs & IaC -->
                     <div class="skills-category">
-                        <h3>Cloud, conteneurs &amp; IaC</h3>
+                        <h3 data-i18n="skills.cloud.title">Cloud, conteneurs &amp; IaC</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.cloud.providers">
                                 AWS &amp; Azure (services IaaS / PaaS)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.cloud.containers">
                                 Docker &amp; Kubernetes (K3s)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.cloud.automation">
                                 Automatisation d'infrastructures avec Ansible
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.cloud.observability">
                                 Observabilité : Grafana, Prometheus, Zabbix, Centreon
                             </div>
                         </div>
@@ -391,15 +394,15 @@
 
                     <!-- Langages & scripts -->
                     <div class="skills-category">
-                        <h3>Langages &amp; scripts</h3>
+                        <h3 data-i18n="skills.languages.title">Langages &amp; scripts</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.languages.python">
                                 Python (automatisation de contrôles, traitement de rapports)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.languages.shell">
                                 Bash &amp; PowerShell (outillage d'administration &amp; d’exploitation)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.languages.excel">
                                 Génération automatisée de rapports Excel avec avis de sécurité
                             </div>
                         </div>
@@ -407,21 +410,21 @@
 
                     <!-- Data, reporting & automatisation -->
                     <div class="skills-category">
-                        <h3>Data, reporting &amp; automatisation</h3>
-                            <div class="skills-list">
-                                <div class="skill-item">
+                        <h3 data-i18n="skills.data.title">Data, reporting &amp; automatisation</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-i18n="skills.data.powerbi">
                                     Power BI (tableaux de bord sécurité, suivi licences &amp; fournisseurs)
-                                </div>
-                                <div class="skill-item">
+                            </div>
+                            <div class="skill-item" data-i18n="skills.data.powerAutomate">
                                     Power Automate (workflows &amp; automatisation de processus sécurité)
-                                </div>
-                                <div class="skill-item">
+                            </div>
+                            <div class="skill-item" data-i18n="skills.data.n8n">
                                     n8n (orchestration et industrialisation d'automatisations métiers)
-                                </div>
-                                <div class="skill-item">
+                            </div>
+                            <div class="skill-item" data-i18n="skills.data.cyberlake">
                                     Projet CyberLake : unification des sources de données sécurité (endpoint, applicatif, PAM, AD…)
-                                </div>
-                                <div class="skill-item">
+                            </div>
+                            <div class="skill-item" data-i18n="skills.data.mapping">
                                     Cartographie applicative &amp; indicateurs de migration SI
                             </div>
                         </div>
@@ -429,18 +432,18 @@
 
                     <!-- Méthodologie & communication -->
                     <div class="skills-category">
-                        <h3>Méthodologie &amp; communication</h3>
+                        <h3 data-i18n="skills.method.title">Méthodologie &amp; communication</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.method.events">
                                 Animation de Security Day &amp; relation fournisseurs cybersécurité
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.method.committees">
                                 Conduite de comités avec RSSI, métiers &amp; direction
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.method.writing">
                                 Rédaction de livrables pédagogiques &amp; supports de sensibilisation
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.method.change">
                                 Accompagnement au changement sur projets de transformation digitale
                             </div>
                         </div>
@@ -448,18 +451,18 @@
 
                     <!-- Langues & certifications -->
                     <div class="skills-category">
-                        <h3>Langues &amp; certifications</h3>
+                        <h3 data-i18n="skills.languagesCerts.title">Langues &amp; certifications</h3>
                         <div class="skills-list">
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.languagesCerts.french">
                                 Français (natif)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.languagesCerts.english">
                                 Anglais (B1 – usage professionnel)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.languagesCerts.secnum">
                                 MOOC SecNumacadémie (ANSSI)
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-item" data-i18n="skills.languagesCerts.cisco">
                                 Introduction to Cybersecurity (Cisco)
                             </div>
                         </div>
@@ -471,24 +474,24 @@
         <!-- Contact Section -->
         <section class="contact-section" id="contact">
             <div class="container">
-                <h2>Contact</h2>
-                <p class="section-intro">Intéressé par mon travail? N'hésitez pas à me contacter</p>
+                <h2 data-i18n="contact.heading">Contact</h2>
+                <p class="section-intro" data-i18n="contact.intro">Intéressé par mon travail? N'hésitez pas à me contacter</p>
                 
                 <div class="contact-container">
                     <div class="contact-info">
                         <div class="contact-method">
                             <i class="fas fa-envelope"></i>
-                            <h3>Email</h3>
+                            <h3 data-i18n="contact.email">Email</h3>
                             <p>kevinlembert-pro@pm.me</p>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-linkedin"></i>
-                            <h3>LinkedIn</h3>
+                            <h3 data-i18n="contact.linkedin">LinkedIn</h3>
                             <p><a href="https://www.linkedin.com/in/kevin-lembert-cybersec/" target="_blank">kevin-lembert-cybersec</a></p>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-github"></i>
-                            <h3>GitHub</h3>
+                            <h3 data-i18n="contact.github">GitHub</h3>
                             <p><a href="https://github.com/K-rrox78" target="_blank">K-rrox78</a></p>
                         </div>
                     </div>
@@ -499,11 +502,320 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Kevin Lembert. Tous droits réservés.</p>
+            <p data-i18n="footer.rights">&copy; 2025 Kevin Lembert. Tous droits réservés.</p>
         </div>
     </footer>
-    
+
     <script src="../js/script.js"></script>
     <script src="cyber-illustrations.js"></script>
+    <script>
+        const translations = {
+            fr: {
+                'nav.about': 'À propos',
+                'nav.illustrations': 'Compétences clés',
+                'nav.projects': 'Projets',
+                'nav.experience': 'Expérience',
+                'nav.education': 'Formation',
+                'nav.skills': 'Compétences',
+                'nav.contact': 'Contact',
+                'hero.name': 'Kevin Lembert',
+                'hero.title': 'Ingénieur Systèmes & Cybersécurité',
+                'hero.description': 'Passionné par la sécurité informatique et le développement DevOps. Je crée des solutions robustes pour sécuriser les infrastructures et automatiser les déploiements.',
+                'hero.github': 'GitHub',
+                'hero.linkedin': 'LinkedIn',
+                'illustrations.heading': 'Compétences clés',
+                'illustrations.intro': "Synthèse de mes principaux domaines d'intervention en cybersécurité opérationnelle, environnements industriels (OT/ICS) et automatisation orientée métier.",
+                'illustrations.industrial.title': 'Cybersécurité industrielle (OT/ICS)',
+                'illustrations.industrial.text': "Tests d'intrusion contrôlés, scans de vulnérabilités OT et priorisation des remédiations pour sécuriser les systèmes industriels critiques et limiter les impacts métier.",
+                'illustrations.risk.title': 'Gestion des risques & gouvernance SSI',
+                'illustrations.risk.text': "Analyse des risques basée sur les guides ANSSI, matrices de flux et MITRE ATT&CK, contribution aux plans d'action cybersécurité et animation de comités avec les métiers et RSSI.",
+                'illustrations.vuln.title': 'Supervision des vulnérabilités & SOC',
+                'illustrations.vuln.text': "Suivi des vulnérabilités avec Nmap, Nessus, OpenVAS, Cyberwatch & BeSecure, appui aux équipes SOC pour prioriser la surveillance et transformer les alertes en décisions opérationnelles.",
+                'illustrations.automation.title': 'Automatisation & data pour la cybersécurité',
+                'illustrations.automation.text': 'Automatisation de taches via Python, Bash et PowerShell, génération de rapports Excel et tableaux de bord Power BI, industrialisation des flux avec n8n, Power Automate et SharePoint.',
+                'projects.heading': 'Mes Projets',
+                'projects.intro': "Une sélection de mes projets en cybersécurité et automatisation d'infrastructure",
+                'projects.docker.title': 'DockerInstaller',
+                'projects.docker.text': "Script d'installation automatisée de Docker Engine pour les systèmes Debian. Configure les dépendances, clés GPG, et accès non-root.",
+                'projects.openstack.title': 'OpenStack',
+                'projects.openstack.text': "Script Bash pour l'installation automatisée d'OpenStack et Authelia avec Nginx. Déploiement complet d'infrastructure cloud privée.",
+                'projects.heimdall.title': 'Heimdall',
+                'projects.heimdall.text': 'Outil de sécurité développé en Python pour la surveillance et la protection des systèmes informatiques.',
+                'projects.zimbra.title': 'Zimbra-Grafana-Prometheus',
+                'projects.zimbra.text': "Documentation d'installation et configuration de Zimbra avec monitoring via Grafana et Prometheus sur Debian. Projet de fin d'études BTS.",
+                'projects.cta': 'Voir sur GitHub <i class="fas fa-arrow-right"></i>',
+                'experience.heading': 'Expérience Professionnelle',
+                'experience.intro': 'Mon parcours professionnel en cybersécurité',
+                'experience.current.date': 'Janvier 2025 - Présent (8 mois)',
+                'experience.current.title': 'Analyste en Sécurité des Systèmes Informatiques Industriels',
+                'experience.current.company': 'Groupe SNCF - Île-de-France, France',
+                'experience.current.penetration': "<strong>Tests d'Intrusion :</strong> Conduite de tests d'intrusion réguliers pour identifier et exploiter les faiblesses potentielles. Fourniture de recommandations détaillées pour remédier aux vulnérabilités.",
+                'experience.current.vuln': "<strong>Scan de Vulnérabilités :</strong> Détection des vulnérabilités existantes sur tout le réseau et les applications OT. Évaluation continue des menaces nouvelles et émergentes.",
+                'experience.current.reports': "<strong>Rapports de Sécurité :</strong> Élaboration de rapports sur l'état de sécurité, incluant les failles trouvées et les actions correctives proposées.",
+                'experience.current.automation': "<strong>Automatisation :</strong> Création de scripts en Python &amp; Bash pour optimiser les traitements des procédures, notamment l'automatisation des relectures de rapports et la vérification des vulnérabilités.",
+                'experience.engineer.date': 'Janvier 2024 - Janvier 2025 (1 an 1 mois)',
+                'experience.engineer.title': 'Ingénieur en cybersécurité',
+                'experience.engineer.company': 'Groupe SNCF - Île-de-France, France',
+                'experience.engineer.jop': "Participation au plan d'action JOP 2024 visant à préparer la stratégie de défense du groupe SNCF pour les Jeux Olympiques &amp; Paralympiques 2024 de Paris.",
+                'experience.engineer.risk': "Participation à la gestion des risques cybersécurité (plan d'action, priorisation, suivi).",
+                'experience.engineer.soc': 'Appui à la stratégie SOC et gouvernance SSI : définition des priorités de surveillance.',
+                'experience.engineer.threats': 'Veille continue sur les menaces émergentes et TTPs via outils internes et sources externes.',
+                'experience.engineer.projects': 'Gestion de Projets liés à la sécurité du groupe SNCF.',
+                'experience.lead.date': 'Septembre 2022 - Septembre 2024 (2 ans 1 mois)',
+                'experience.lead.title': 'Responsable de la Cellule de veille Cybersécurité',
+                'experience.lead.company': 'Groupe SNCF - Île-de-France, France',
+                'experience.lead.monitoring': "<strong>Mission Veille Cybersécurité :</strong> Refonte du SharePoint de communication de la cellule de veille cybersécurité.",
+                'experience.lead.securityDay': 'Gouvernance des Security Day SNCF (Instance mensuelle réunissant plusieurs fournisseurs du marché de la Cybersécurité).',
+                'experience.lead.tools': "Mise en place d'outils de suivi des fournisseurs et des licences des équipements SI via Power BI et Power Automate.",
+                'experience.lead.cyberlake': "<strong>Projet Cyber Lake :</strong> Mise en place d'un data Lake visant à unifier les sources de données de sécurité du groupe (Endpoint, services applicatifs, PAM, AD, etc.).",
+                'experience.production.date': 'Novembre 2020 - Août 2022 (1 an 10 mois)',
+                'experience.production.title': 'Chargé de production',
+                'experience.production.company': 'SNCF Réseau - Ville de Paris, Île-de-France, France',
+                'experience.production.digital': "Appui à la maîtrise d'ouvrage SI dans un projet de transformation digitale : décommissionnement d'une chaîne de diffusion et migration des applications clients.",
+                'experience.production.data': 'Identification des données entre chaînes pour assurer la continuité du SI lors des migrations.',
+                'experience.production.tracking': "Mise en place d'outils de suivi (SharePoint) et d'indicateurs de migration.",
+                'experience.production.mapping': "Réalisation d'un mapping des données et rédaction de cahiers de recettes pour les outils de visualisation.",
+                'education.heading': 'Formation',
+                'education.intro': 'Mon parcours académique',
+                'education.m2.school': 'ENSITECH',
+                'education.m2.title': "Master 2 (M2), Sécurité / sûreté de l'information des systèmes informatiques",
+                'education.m2.date': 'Septembre 2024 - Août 2025',
+                'education.m1.school': 'ENSITECH',
+                'education.m1.title': "Master 1 (M1), Sécurité / sûreté de l'information des systèmes informatiques",
+                'education.m1.date': 'Septembre 2023 - Août 2024',
+                'education.bachelor.school': 'ENSITECH',
+                'education.bachelor.title': "Bachelor CyberSécurité &amp; Cloud Computing, Technologies de l'information",
+                'education.bachelor.date': 'Septembre 2022 - Août 2023',
+                'education.bts.school': 'CFA ISCIO',
+                'education.bts.title': 'BTS services informatiques aux organisations, Mise en réseau de systèmes informatiques et télécommunications',
+                'education.bts.date': 'Septembre 2020 - Juin 2022',
+                'education.bac.school': 'Lycée Émilie De Breteuil',
+                'education.bac.title': "Baccalauréat, Sciences et Technologies de l'industrie et du développement durable",
+                'education.bac.date': '2017 - 2020',
+                'skills.heading': 'Compétences',
+                'skills.intro': 'Un panorama de mes compétences techniques et méthodologiques en cybersécurité, industrialisation et pilotage de la sécurité.',
+                'skills.domains.title': 'Domaines de compétences',
+                'skills.domains.risk': 'Gestion des risques (guides ANSSI, matrice de flux, MITRE ATT&CK)',
+                'skills.domains.audit': 'Audit &amp; conformité SSI, évaluation de maturité',
+                'skills.domains.awareness': 'Sensibilisation sécurité (phishing, mots de passe)',
+                'skills.domains.project': 'Pilotage de projets &amp; comitologie (opérationnelle / stratégique)',
+                'skills.ot.title': 'Cybersécurité OT / opérationnelle',
+                'skills.ot.pentest': 'Tests d’intrusion contrôlés sur environnements OT/ICS',
+                'skills.ot.vuln': 'Scans de vulnérabilités OT et priorisation des remédiations',
+                'skills.ot.reports': 'Production de rapports de sécurité actionnables pour les métiers',
+                'skills.ot.strategy': 'Contribution à la stratégie de défense (JOP 2024, appui SOC &amp; gouvernance SSI)',
+                'skills.tools.title': 'Outils de sécurité &amp; supervision',
+                'skills.tools.scanners': 'Nmap, Nessus, Burp Suite, Metasploit, OpenVAS, BeSecure, Cyberwatch',
+                'skills.tools.edr': 'EDR, SIEM, Windows Defender, Stormshield, OPNsense / pfSense, ELK',
+                'skills.tools.threat': 'Exploitation de CISA KEV et sources ouvertes pour la veille vulnérabilités',
+                'skills.systems.title': 'Systèmes, réseaux &amp; virtualisation',
+                'skills.systems.admin': 'Administration Linux, Windows, macOS',
+                'skills.systems.directory': "Gestion d'annuaires &amp; infrastructures : Active Directory, VMware vSphere",
+                'skills.systems.virtualization': 'Virtualisation : VMware, Proxmox, KVM',
+                'skills.systems.network': 'VPN &amp; sécurité réseau (OpenVPN, firewalls)',
+                'skills.cloud.title': 'Cloud, conteneurs &amp; IaC',
+                'skills.cloud.providers': 'AWS &amp; Azure (services IaaS / PaaS)',
+                'skills.cloud.containers': 'Docker &amp; Kubernetes (K3s)',
+                'skills.cloud.automation': "Automatisation d'infrastructures avec Ansible",
+                'skills.cloud.observability': 'Observabilité : Grafana, Prometheus, Zabbix, Centreon',
+                'skills.languages.title': 'Langages &amp; scripts',
+                'skills.languages.python': 'Python (automatisation de contrôles, traitement de rapports)',
+                'skills.languages.shell': "Bash &amp; PowerShell (outillage d'administration &amp; d’exploitation)",
+                'skills.languages.excel': 'Génération automatisée de rapports Excel avec avis de sécurité',
+                'skills.data.title': 'Data, reporting &amp; automatisation',
+                'skills.data.powerbi': 'Power BI (tableaux de bord sécurité, suivi licences &amp; fournisseurs)',
+                'skills.data.powerAutomate': 'Power Automate (workflows &amp; automatisation de processus sécurité)',
+                'skills.data.n8n': "n8n (orchestration et industrialisation d'automatisations métiers)",
+                'skills.data.cyberlake': 'Projet CyberLake : unification des sources de données sécurité (endpoint, applicatif, PAM, AD…)',
+                'skills.data.mapping': 'Cartographie applicative &amp; indicateurs de migration SI',
+                'skills.method.title': 'Méthodologie &amp; communication',
+                'skills.method.events': 'Animation de Security Day &amp; relation fournisseurs cybersécurité',
+                'skills.method.committees': 'Conduite de comités avec RSSI, métiers &amp; direction',
+                'skills.method.writing': 'Rédaction de livrables pédagogiques &amp; supports de sensibilisation',
+                'skills.method.change': 'Accompagnement au changement sur projets de transformation digitale',
+                'skills.languagesCerts.title': 'Langues &amp; certifications',
+                'skills.languagesCerts.french': 'Français (natif)',
+                'skills.languagesCerts.english': 'Anglais (B1 – usage professionnel)',
+                'skills.languagesCerts.secnum': 'MOOC SecNumacadémie (ANSSI)',
+                'skills.languagesCerts.cisco': 'Introduction to Cybersecurity (Cisco)',
+                'contact.heading': 'Contact',
+                'contact.intro': "Intéressé par mon travail? N'hésitez pas à me contacter",
+                'contact.email': 'Email',
+                'contact.linkedin': 'LinkedIn',
+                'contact.github': 'GitHub',
+                'footer.rights': '&copy; 2025 Kevin Lembert. Tous droits réservés.'
+            },
+            en: {
+                'nav.about': 'About',
+                'nav.illustrations': 'Key Skills',
+                'nav.projects': 'Projects',
+                'nav.experience': 'Experience',
+                'nav.education': 'Education',
+                'nav.skills': 'Skills',
+                'nav.contact': 'Contact',
+                'hero.name': 'Kevin Lembert',
+                'hero.title': 'Systems & Cybersecurity Engineer',
+                'hero.description': 'Passionate about information security and DevOps development. I build robust solutions to secure infrastructures and automate deployments.',
+                'hero.github': 'GitHub',
+                'hero.linkedin': 'LinkedIn',
+                'illustrations.heading': 'Key Skills',
+                'illustrations.intro': 'Overview of my main areas of expertise in operational cybersecurity, industrial environments (OT/ICS) and business-focused automation.',
+                'illustrations.industrial.title': 'Industrial Cybersecurity (OT/ICS)',
+                'illustrations.industrial.text': 'Controlled penetration testing, OT vulnerability scans and remediation prioritisation to secure critical industrial systems and limit business impact.',
+                'illustrations.risk.title': 'Risk Management &amp; Security Governance',
+                'illustrations.risk.text': 'Risk analysis based on ANSSI guides, flow matrices and MITRE ATT&CK, contribution to cybersecurity action plans and facilitation of committees with business teams and CISOs.',
+                'illustrations.vuln.title': 'Vulnerability Monitoring &amp; SOC',
+                'illustrations.vuln.text': 'Vulnerability tracking with Nmap, Nessus, OpenVAS, Cyberwatch & BeSecure, supporting SOC teams to prioritise monitoring and turn alerts into operational decisions.',
+                'illustrations.automation.title': 'Automation &amp; Data for Cybersecurity',
+                'illustrations.automation.text': 'Task automation with Python, Bash and PowerShell, automated Excel reports and Power BI dashboards, industrialising workflows with n8n, Power Automate and SharePoint.',
+                'projects.heading': 'My Projects',
+                'projects.intro': 'A selection of my projects in cybersecurity and infrastructure automation',
+                'projects.docker.title': 'DockerInstaller',
+                'projects.docker.text': 'Automated installation script for Docker Engine on Debian systems. Configures dependencies, GPG keys and non-root access.',
+                'projects.openstack.title': 'OpenStack',
+                'projects.openstack.text': 'Bash script for automated installation of OpenStack and Authelia with Nginx. Full private cloud deployment.',
+                'projects.heimdall.title': 'Heimdall',
+                'projects.heimdall.text': 'Security tool developed in Python for monitoring and protecting IT systems.',
+                'projects.zimbra.title': 'Zimbra-Grafana-Prometheus',
+                'projects.zimbra.text': 'Installation and configuration guide for Zimbra with monitoring via Grafana and Prometheus on Debian. BTS final project.',
+                'projects.cta': 'View on GitHub <i class="fas fa-arrow-right"></i>',
+                'experience.heading': 'Professional Experience',
+                'experience.intro': 'My professional journey in cybersecurity',
+                'experience.current.date': 'January 2025 - Present (8 months)',
+                'experience.current.title': 'Industrial IT Security Analyst',
+                'experience.current.company': 'SNCF Group - Île-de-France, France',
+                'experience.current.penetration': '<strong>Penetration Testing:</strong> Performed regular penetration tests to identify and exploit potential weaknesses. Provided detailed recommendations to remediate vulnerabilities.',
+                'experience.current.vuln': '<strong>Vulnerability Scanning:</strong> Detected existing vulnerabilities across the OT network and applications. Continuously assessed emerging and evolving threats.',
+                'experience.current.reports': '<strong>Security Reporting:</strong> Produced security posture reports, including discovered weaknesses and proposed corrective actions.',
+                'experience.current.automation': '<strong>Automation:</strong> Built Python &amp; Bash scripts to streamline procedures, including report reviews and vulnerability checks.',
+                'experience.engineer.date': 'January 2024 - January 2025 (1 year 1 month)',
+                'experience.engineer.title': 'Cybersecurity Engineer',
+                'experience.engineer.company': 'SNCF Group - Île-de-France, France',
+                'experience.engineer.jop': 'Supported the JOP 2024 action plan to prepare the defence strategy for SNCF during the Paris 2024 Olympic &amp; Paralympic Games.',
+                'experience.engineer.risk': 'Participated in cybersecurity risk management (action plan, prioritisation, follow-up).',
+                'experience.engineer.soc': 'Supported SOC strategy and security governance: defining monitoring priorities.',
+                'experience.engineer.threats': 'Continuous monitoring of emerging threats and TTPs using internal tools and external sources.',
+                'experience.engineer.projects': 'Managed projects related to group security.',
+                'experience.lead.date': 'September 2022 - September 2024 (2 years 1 month)',
+                'experience.lead.title': 'Head of Cybersecurity Watch Cell',
+                'experience.lead.company': 'SNCF Group - Île-de-France, France',
+                'experience.lead.monitoring': '<strong>Cybersecurity Watch Mission:</strong> Redesigned the cybersecurity watch SharePoint site.',
+                'experience.lead.securityDay': 'Governed SNCF Security Day (monthly event bringing together several cybersecurity vendors).',
+                'experience.lead.tools': 'Implemented supplier and licence tracking tools via Power BI and Power Automate.',
+                'experience.lead.cyberlake': '<strong>Cyber Lake Project:</strong> Built a data lake to unify the group’s security data sources (Endpoint, application services, PAM, AD, etc.).',
+                'experience.production.date': 'November 2020 - August 2022 (1 year 10 months)',
+                'experience.production.title': 'Production Officer',
+                'experience.production.company': 'SNCF Réseau - Paris, Île-de-France, France',
+                'experience.production.digital': 'Supported IT project management in a digital transformation project: decommissioned a broadcast chain and migrated client applications.',
+                'experience.production.data': 'Mapped data between chains to ensure IT continuity during migrations.',
+                'experience.production.tracking': 'Implemented tracking tools (SharePoint) and migration indicators.',
+                'experience.production.mapping': 'Created data mapping and drafted test plans for visualisation tools.',
+                'education.heading': 'Education',
+                'education.intro': 'My academic background',
+                'education.m2.school': 'ENSITECH',
+                'education.m2.title': 'Master’s Degree (M2), Information Systems Security',
+                'education.m2.date': 'September 2024 - August 2025',
+                'education.m1.school': 'ENSITECH',
+                'education.m1.title': 'Master’s Degree (M1), Information Systems Security',
+                'education.m1.date': 'September 2023 - August 2024',
+                'education.bachelor.school': 'ENSITECH',
+                'education.bachelor.title': 'Bachelor Cybersecurity &amp; Cloud Computing, Information Technologies',
+                'education.bachelor.date': 'September 2022 - August 2023',
+                'education.bts.school': 'CFA ISCIO',
+                'education.bts.title': 'BTS IT Services for Organisations, Networked Systems and Telecommunications',
+                'education.bts.date': 'September 2020 - June 2022',
+                'education.bac.school': 'Lycée Émilie De Breteuil',
+                'education.bac.title': 'Baccalauréat, Industrial Science and Sustainable Development Technologies',
+                'education.bac.date': '2017 - 2020',
+                'skills.heading': 'Skills',
+                'skills.intro': 'An overview of my technical and methodological skills in cybersecurity, industrialisation and security management.',
+                'skills.domains.title': 'Areas of Expertise',
+                'skills.domains.risk': 'Risk management (ANSSI guides, flow matrix, MITRE ATT&amp;CK)',
+                'skills.domains.audit': 'Security audits &amp; compliance, maturity assessments',
+                'skills.domains.awareness': 'Security awareness (phishing, passwords)',
+                'skills.domains.project': 'Project management &amp; governance (operational / strategic)',
+                'skills.ot.title': 'OT / Operational Cybersecurity',
+                'skills.ot.pentest': 'Controlled penetration tests on OT/ICS environments',
+                'skills.ot.vuln': 'OT vulnerability scans and remediation prioritisation',
+                'skills.ot.reports': 'Actionable security reports for business teams',
+                'skills.ot.strategy': 'Contribution to defence strategy (JOP 2024, SOC support &amp; security governance)',
+                'skills.tools.title': 'Security &amp; Monitoring Tools',
+                'skills.tools.scanners': 'Nmap, Nessus, Burp Suite, Metasploit, OpenVAS, BeSecure, Cyberwatch',
+                'skills.tools.edr': 'EDR, SIEM, Windows Defender, Stormshield, OPNsense / pfSense, ELK',
+                'skills.tools.threat': 'Use of CISA KEV and open sources for vulnerability watch',
+                'skills.systems.title': 'Systems, Networks &amp; Virtualisation',
+                'skills.systems.admin': 'Linux, Windows, macOS administration',
+                'skills.systems.directory': 'Directory &amp; infrastructure management: Active Directory, VMware vSphere',
+                'skills.systems.virtualization': 'Virtualisation: VMware, Proxmox, KVM',
+                'skills.systems.network': 'VPN &amp; network security (OpenVPN, firewalls)',
+                'skills.cloud.title': 'Cloud, Containers &amp; IaC',
+                'skills.cloud.providers': 'AWS &amp; Azure (IaaS / PaaS services)',
+                'skills.cloud.containers': 'Docker &amp; Kubernetes (K3s)',
+                'skills.cloud.automation': 'Infrastructure automation with Ansible',
+                'skills.cloud.observability': 'Observability: Grafana, Prometheus, Zabbix, Centreon',
+                'skills.languages.title': 'Languages &amp; Scripting',
+                'skills.languages.python': 'Python (control automation, report processing)',
+                'skills.languages.shell': 'Bash &amp; PowerShell (administration &amp; operations tooling)',
+                'skills.languages.excel': 'Automated Excel reports with security insights',
+                'skills.data.title': 'Data, Reporting &amp; Automation',
+                'skills.data.powerbi': 'Power BI (security dashboards, licence &amp; vendor tracking)',
+                'skills.data.powerAutomate': 'Power Automate (workflows &amp; security process automation)',
+                'skills.data.n8n': 'n8n (orchestration and industrialisation of business automations)',
+                'skills.data.cyberlake': 'CyberLake project: unifying security data sources (endpoint, applications, PAM, AD…)',
+                'skills.data.mapping': 'Application mapping &amp; IT migration indicators',
+                'skills.method.title': 'Methodology &amp; Communication',
+                'skills.method.events': 'Facilitation of Security Day events &amp; vendor relationships',
+                'skills.method.committees': 'Leading committees with CISOs, business teams and leadership',
+                'skills.method.writing': 'Writing educational deliverables &amp; awareness materials',
+                'skills.method.change': 'Change management for digital transformation projects',
+                'skills.languagesCerts.title': 'Languages &amp; Certifications',
+                'skills.languagesCerts.french': 'French (native)',
+                'skills.languagesCerts.english': 'English (B1 – professional use)',
+                'skills.languagesCerts.secnum': 'MOOC SecNumacadémie (ANSSI)',
+                'skills.languagesCerts.cisco': 'Introduction to Cybersecurity (Cisco)',
+                'contact.heading': 'Contact',
+                'contact.intro': 'Interested in my work? Feel free to get in touch',
+                'contact.email': 'Email',
+                'contact.linkedin': 'LinkedIn',
+                'contact.github': 'GitHub',
+                'footer.rights': '&copy; 2025 Kevin Lembert. All rights reserved.'
+            }
+        };
+
+        const translatableElements = document.querySelectorAll('[data-i18n]');
+        const languageToggle = document.getElementById('language-toggle');
+
+        function applyTranslations(lang) {
+            const targetLanguage = translations[lang] ? lang : 'fr';
+            document.documentElement.lang = targetLanguage;
+
+            translatableElements.forEach(element => {
+                const key = element.dataset.i18n;
+                const translation = translations[targetLanguage][key];
+                if (translation) {
+                    if (element.dataset.i18nType === 'html') {
+                        element.innerHTML = translation;
+                    } else {
+                        element.textContent = translation;
+                    }
+                }
+            });
+
+            languageToggle.textContent = targetLanguage === 'fr' ? 'EN' : 'FR';
+            languageToggle.setAttribute('aria-label', targetLanguage === 'fr' ? 'Passer en anglais' : 'Switch to French');
+            localStorage.setItem('preferredLanguage', targetLanguage);
+        }
+
+        const savedLanguage = localStorage.getItem('preferredLanguage');
+        const browserLanguage = (navigator.language || 'fr').toLowerCase().startsWith('en') ? 'en' : 'fr';
+        const initialLanguage = savedLanguage || browserLanguage;
+
+        applyTranslations(initialLanguage);
+
+        languageToggle.addEventListener('click', () => {
+            const nextLanguage = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+            applyTranslations(nextLanguage);
+        });
+    </script>
 </body>
 </html>
