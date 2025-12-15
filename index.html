@@ -16,6 +16,11 @@
                 <div class="logo">
                     <a href="../index.html">Kevin Lembert</a>
                 </div>
+                <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </button>
                 <ul class="nav-links">
                     <li><a href="#about" data-i18n="nav.about">À propos</a></li>
                     <li><a href="#illustrations" data-i18n="nav.illustrations">Compétences clés</a></li>
@@ -509,6 +514,25 @@
     <script src="../js/script.js"></script>
     <script src="cyber-illustrations.js"></script>
     <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('is-open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('is-open')) {
+                        navLinks.classList.remove('is-open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        }
+
         const translations = {
             fr: {
                 'nav.about': 'À propos',
