@@ -274,8 +274,10 @@ a:hover {
     backdrop-filter: blur(5px);
 }
 
-.social-profile i {
-    font-size: 24px;
+.social-profile .social-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .social-profile.github {
