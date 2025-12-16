@@ -52,6 +52,7 @@ body {
     background-color: var(--dark-bg);
     color: var(--gray-light);
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,6 +114,8 @@ a:hover {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     padding: 1rem 0;
