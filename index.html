@@ -14,7 +14,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <a href="../index.html">Kevin Lembert</a>
+                    <a href="index.html">Kevin Lembert</a>
                 </div>
                 <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
                     <span class="menu-bar"></span>
@@ -149,6 +149,20 @@
                             <span class="tag">Monitoring</span>
                         </div>
                         <a href="https://github.com/K-rrox78/Heimdall" class="project-link" target="_blank" data-i18n="projects.cta" data-i18n-type="html">Voir sur GitHub <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="project-icon"><i class="fas fa-diagram-project"></i></div>
+                        <h3 data-i18n="projects.kx.title">KX-architect</h3>
+                        <p data-i18n="projects.kx.text">Architecte digital automatisé transformant des briefs clients en cahiers des charges et spécifications techniques structurées en moins de 2 minutes, avec le prompt de génération du site web inclus dans le cahier des charges. Workflow full-stack utilisant n8n, OpenAI et GitHub Gist.</p>
+                        <div class="project-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">n8n</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">SaaS</span>
+                            <span class="tag">Productivity</span>
+                        </div>
+                        <a href="https://kx-app.net/services" class="project-link" target="_blank" data-i18n="projects.kx.cta" data-i18n-type="html">Accéder au service <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="portfolio-item">
@@ -487,17 +501,17 @@
                         <div class="contact-method">
                             <i class="fas fa-envelope"></i>
                             <h3 data-i18n="contact.email">Email</h3>
-                            <br>kevinlembert-pro@pm.me</p>
+                            <p><a href="mailto:kevinlembert-pro@pm.me">kevinlembert-pro@pm.me</a></p>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-linkedin"></i>
                             <h3 data-i18n="contact.linkedin">LinkedIn</h3>
-                            <br><a href="https://www.linkedin.com/in/kevin-lembert-cybersec/" target="_blank">kevin-lembert-cybersec</a></p>
+                            <p><a href="https://www.linkedin.com/in/kevin-lembert-cybersec/" target="_blank">kevin-lembert-cybersec</a></p>
                         </div>
                         <div class="contact-method">
                             <i class="fab fa-github"></i>
                             <h3 data-i18n="contact.github">GitHub</h3>
-                            <br><a href="https://github.com/K-rrox78" target="_blank">K-rrox78</a></p>
+                            <p><a href="https://github.com/K-rrox78" target="_blank">K-rrox78</a></p>
                         </div>
                     </div>
                 </div>
@@ -514,27 +528,28 @@
     <script src="../js/script.js"></script>
     <script src="cyber-illustrations.js"></script>
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
 
-        if (menuToggle && navLinks) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = navLinks.classList.toggle('is-open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
-            });
-
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('is-open')) {
-                        navLinks.classList.remove('is-open');
-                        menuToggle.setAttribute('aria-expanded', 'false');
-                    }
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    const isOpen = navLinks.classList.toggle('is-open');
+                    menuToggle.setAttribute('aria-expanded', isOpen);
                 });
-            });
-        }
 
-        const translations = {
-            fr: {
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navLinks.classList.contains('is-open')) {
+                            navLinks.classList.remove('is-open');
+                            menuToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                });
+            }
+
+            const translations = {
+                fr: {
                 'nav.about': 'À propos',
                 'nav.illustrations': 'Compétences clés',
                 'nav.projects': 'Projets',
@@ -565,9 +580,12 @@
                 'projects.openstack.text': "Script Bash pour l'installation automatisée d'OpenStack et Authelia avec Nginx. Déploiement complet d'infrastructure cloud privée.",
                 'projects.heimdall.title': 'Heimdall',
                 'projects.heimdall.text': 'Outil de sécurité développé en Python pour la surveillance et la protection des systèmes informatiques.',
+                'projects.kx.title': 'KX-architect',
+                'projects.kx.text': 'Architecte digital automatisé transformant des briefs clients en cahiers des charges et spécifications techniques structurées en moins de 2 minutes, avec le prompt de génération du site web inclus dans le cahier des charges. Workflow full-stack utilisant n8n, OpenAI et GitHub Gist.',
                 'projects.zimbra.title': 'Zimbra-Grafana-Prometheus',
                 'projects.zimbra.text': "Documentation d'installation et configuration de Zimbra avec monitoring via Grafana et Prometheus sur Debian. Projet de fin d'études BTS.",
                 'projects.cta': 'Voir sur GitHub <i class="fas fa-arrow-right"></i>',
+                'projects.kx.cta': 'Accéder au service <i class="fas fa-arrow-right"></i>',
                 'experience.heading': 'Expérience Professionnelle',
                 'experience.intro': 'Mon parcours professionnel en cybersécurité',
                 'experience.current.date': 'Janvier 2025 - Présent (8 mois)',
@@ -700,9 +718,12 @@
                 'projects.openstack.text': 'Bash script for automated installation of OpenStack and Authelia with Nginx. Full private cloud deployment.',
                 'projects.heimdall.title': 'Heimdall',
                 'projects.heimdall.text': 'Security tool developed in Python for monitoring and protecting IT systems.',
+                'projects.kx.title': 'KX-architect',
+                'projects.kx.text': 'Automated digital architect turning client briefs into structured specifications in under 2 minutes, including the website-generation prompt inside the technical specification. Full-stack workflow leveraging n8n, OpenAI and GitHub Gist.',
                 'projects.zimbra.title': 'Zimbra-Grafana-Prometheus',
                 'projects.zimbra.text': 'Installation and configuration guide for Zimbra with monitoring via Grafana and Prometheus on Debian. BTS final project.',
                 'projects.cta': 'View on GitHub <i class="fas fa-arrow-right"></i>',
+                'projects.kx.cta': 'Access the service <i class="fas fa-arrow-right"></i>',
                 'experience.heading': 'Professional Experience',
                 'experience.intro': 'My professional journey in cybersecurity',
                 'experience.current.date': 'January 2025 - Present (8 months)',
@@ -825,8 +846,10 @@
                 }
             });
 
-            languageToggle.textContent = targetLanguage === 'fr' ? 'EN' : 'FR';
-            languageToggle.setAttribute('aria-label', targetLanguage === 'fr' ? 'Passer en anglais' : 'Switch to French');
+            if (languageToggle) {
+                languageToggle.textContent = targetLanguage === 'fr' ? 'EN' : 'FR';
+                languageToggle.setAttribute('aria-label', targetLanguage === 'fr' ? 'Passer en anglais' : 'Switch to French');
+            }
             localStorage.setItem('preferredLanguage', targetLanguage);
         }
 
@@ -836,9 +859,12 @@
 
         applyTranslations(initialLanguage);
 
-        languageToggle.addEventListener('click', () => {
-            const nextLanguage = document.documentElement.lang === 'fr' ? 'en' : 'fr';
-            applyTranslations(nextLanguage);
+        if (languageToggle) {
+            languageToggle.addEventListener('click', () => {
+                const nextLanguage = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+                applyTranslations(nextLanguage);
+            });
+        }
         });
     </script>
 </body>
