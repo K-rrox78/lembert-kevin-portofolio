@@ -528,27 +528,28 @@
     <script src="../js/script.js"></script>
     <script src="cyber-illustrations.js"></script>
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
 
-        if (menuToggle && navLinks) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = navLinks.classList.toggle('is-open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
-            });
-
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navLinks.classList.contains('is-open')) {
-                        navLinks.classList.remove('is-open');
-                        menuToggle.setAttribute('aria-expanded', 'false');
-                    }
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    const isOpen = navLinks.classList.toggle('is-open');
+                    menuToggle.setAttribute('aria-expanded', isOpen);
                 });
-            });
-        }
 
-        const translations = {
-            fr: {
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navLinks.classList.contains('is-open')) {
+                            navLinks.classList.remove('is-open');
+                            menuToggle.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                });
+            }
+
+            const translations = {
+                fr: {
                 'nav.about': 'À propos',
                 'nav.illustrations': 'Compétences clés',
                 'nav.projects': 'Projets',
@@ -864,6 +865,7 @@
                 applyTranslations(nextLanguage);
             });
         }
+        });
     </script>
 </body>
 </html>
