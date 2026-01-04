@@ -845,8 +845,10 @@
                 }
             });
 
-            languageToggle.textContent = targetLanguage === 'fr' ? 'EN' : 'FR';
-            languageToggle.setAttribute('aria-label', targetLanguage === 'fr' ? 'Passer en anglais' : 'Switch to French');
+            if (languageToggle) {
+                languageToggle.textContent = targetLanguage === 'fr' ? 'EN' : 'FR';
+                languageToggle.setAttribute('aria-label', targetLanguage === 'fr' ? 'Passer en anglais' : 'Switch to French');
+            }
             localStorage.setItem('preferredLanguage', targetLanguage);
         }
 
@@ -856,10 +858,12 @@
 
         applyTranslations(initialLanguage);
 
-        languageToggle.addEventListener('click', () => {
-            const nextLanguage = document.documentElement.lang === 'fr' ? 'en' : 'fr';
-            applyTranslations(nextLanguage);
-        });
+        if (languageToggle) {
+            languageToggle.addEventListener('click', () => {
+                const nextLanguage = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+                applyTranslations(nextLanguage);
+            });
+        }
     </script>
 </body>
 </html>
